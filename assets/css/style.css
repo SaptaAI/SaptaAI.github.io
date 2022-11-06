@@ -579,6 +579,11 @@ section {
 /*--------------------------------------------------------------
 # App Features
 --------------------------------------------------------------*/
+
+.features .content .row {
+  width:  1200px;
+
+}
 .features .content {
   padding: 30px 0;
 }
@@ -605,7 +610,25 @@ section {
   margin-left: 60px;
 }
 
+@media (max-width: 1200px) {
+  .features .content .row {
+    width:  100%;
+  }
+    .features .image {
+      text-align: center;
+    }
+  
+    .features .image img {
+      max-width: 80%;
+    }
+
+}
+
 @media (max-width: 991px) {
+  .features .content .row {
+    width:  100%;
+  
+  }
   .features .image {
     text-align: center;
   }
@@ -616,6 +639,10 @@ section {
 }
 
 @media (max-width: 667px) {
+  .features .content .row {
+    width:  100%;
+  
+  }
   .features .image img {
     max-width: 100%;
   }
